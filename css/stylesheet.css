@@ -247,3 +247,136 @@ a {
     text-decoration: none;
     color: #000000;
 }
+
+/* Medium devices (Tablet, 500px and up) */
+@media only screen and (min-width: 500px){
+    
+    html {
+        scroll-padding-top: 55px;
+    }
+
+    .logo{
+        font-size: 140%;
+        margin-top: 1%;
+    }
+    
+
+    .nav-items {
+        margin: 1% 2% 0 25%; /* margin-top 2 => 3 */
+        height: 42px;
+        border-radius: 20px;
+        width: 73%;
+    }
+    
+    .menu-item {
+        font-size: 12px;
+        padding: 8px;
+    }
+    
+    .nav-items:hover > .menu-item:hover {
+        font-size: 18px;
+    }
+    
+    .dark-layer{
+        display: grid;
+        grid-template-columns: 1fr 3fr ;
+        grid-template-rows: 5fr 1fr;
+    }
+    
+
+    .image {
+        width: 200px;
+        margin-left: 30px
+    }
+    
+    .greeting {
+        font-size: 26px;
+    }
+    
+    .name {
+        border-radius: 20px;
+        font-size: 6.35vw;
+    }
+    
+    .position {
+        font-size: 23px;
+        margin-bottom: 16px;
+    }
+    
+    .introductory-statement {
+        font-size: 16px;
+    }
+    
+    .btns{
+        justify-content: center;
+    }
+    
+    .main {
+        padding: 40px 0px;
+    }
+    
+    .education, .experiences, .skills, .projects {
+        box-shadow: 2px 2px 2px #64646460; ;
+    }
+
+    .education {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .education h2 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .experiences {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .experiences h2 {
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+    
+    li {
+        font-size: 16px;
+    }
+    
+    .footer {
+        background: url(/images/footer-banner2.jpg) no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        height: 80vh;
+    }
+    
+    .light-layer {
+        height: 100%;
+        padding: 20px 20px;
+        background-color: rgba(255, 255, 255, 0.4);
+        backdrop-filter: blur(4px);
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 2fr;
+        gap: 20px;
+    }
+
+    .footer label, .footer p, .footer a, address {
+        font-size: 16px;
+    }
+    
+    .form {
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+    
+    .social {
+        margin-top: 0px;
+        flex-direction: row;
+    }
+    
+    a {
+        padding: 6px;
+    }
+}
