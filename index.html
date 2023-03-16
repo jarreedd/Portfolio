@@ -22,7 +22,11 @@
     
         <header class="header">
             <div class="dark-layer">
-                <img class="image" src="images/head-and-shoulders-original.jpg" alt="profile-picture">
+                <picture class="profile-picture">
+                    <source srcset="images/face.jpg" media="(max-width: 499px)">
+                    <source srcset="images/head-and-shoulders.jpg" media="(max-width: 1023px)">
+                    <img class="image" src="images/head-and-shoulders-original.jpg" alt="profile-picture">
+                </picture>
         
                 <div class="container">
                     <h3 class="greeting">Hello, I am</h3>
@@ -50,7 +54,7 @@
     
                 <article class="qualification">
                     <h3>National Senior Certificate</h3>
-                    <h4>Klein Nederburg Secondary<br>2016 –2020</h4>
+                    <h4>Klein Nederburg Secondary<br>2016 – 2020</h4>
                 </article>
     
                 <article class="qualification">
