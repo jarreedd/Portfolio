@@ -25,8 +25,6 @@ span{
     color: #CA6D18;
 }
 
-
-
 .nav-items {
     background: rgba(100, 100, 100, 0.9);
     position: fixed;
@@ -259,7 +257,6 @@ a {
         font-size: 140%;
         margin-top: 1%;
     }
-    
 
     .nav-items {
         margin: 1% 2% 0 25%; /* margin-top 2 => 3 */
@@ -379,4 +376,167 @@ a {
     a {
         padding: 6px;
     }
+}
+
+/* Large devices (Laptops/Desktops, 1024px and up) */
+
+@media only screen and (min-width: 1024px){
+    
+    html {
+        scroll-padding-top: 60px;
+    }
+
+    .logo{
+        margin: 0% 3%;
+        font-size: 200%;
+        position: fixed;
+        top: -10px;
+    }
+    
+    .nav-items {
+        background: rgba(100, 100, 100, 0.4);
+        right: 0px;
+        margin:0 2% 0 20%;
+        width: 15%;
+        height: 100vh;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        border-radius: 0px;
+        padding-top: 20px;
+    }
+    
+    .menu-item {
+        color: white;
+        font-size: 24px;
+        text-decoration: none;
+        padding: 5px;
+        transition: opacity 400ms ease;
+    }
+    
+    .nav-items:hover > .menu-item:hover {
+        font-size: 28px;
+    }
+    
+    .profile-picture {
+        display: flex;
+        justify-content: center;
+        align-items: end;
+    }
+    
+    .image {
+        width: 400px;
+        margin-left: 40px
+    }
+    
+    .greeting {
+        font-size: 55px;
+    }
+    
+    .name {
+        background-color: rgba(202, 110, 24, 1);
+        z-index: 10;
+        font-size: 100px;
+    }
+
+    .position {
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+    
+    .introductory-statement {
+        font-size: 20px;
+    }
+    
+    .btns{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .btns a {
+        font-size: 24px;
+    }
+    
+    .main {
+        padding: 60px 20px;
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+    
+    .education, .experiences, .skills, .projects {
+        border: 3px solid #64646460;
+        border-radius: 20px;
+        margin: 20px 10px;
+        box-shadow: 2px 2px 4px #64646460;
+    }
+    
+    .main h2 {
+        font-size: 32px;
+        padding-bottom: 12px;
+    }
+    
+    .qualification, .experience{
+        margin-top: 10px;
+    }
+    
+    p {
+        font-size: 18px;
+    }
+    
+    .skills ul {
+        margin-bottom: 10px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+    }
+    
+    li {
+        list-style-type: none;
+        font-weight: 600;
+        font-size: 18px;
+    }
+    
+    .interests h4{
+        font-size: 26px;
+        color: #646464;
+    }
+    
+    .footer {
+        height: 50vh;
+    }
+    
+    .light-layer {
+        padding: 10px 20px;
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 2fr;
+        grid-template-rows: repeat(2, 1fr);
+    }
+    
+    .footer label, .footer p, .footer a, address {
+        font-size: 14px;
+    }
+    
+    .form {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+    
+    .social {
+        margin-top: 20px;
+        width: 150px;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    
+    a {
+        display: flex;
+        text-decoration: none;
+        color: #000000;
+    } 
 }
