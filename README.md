@@ -4,4 +4,4 @@
 
 A digital portfolio that contains information about myself. This website has a list of my qualifications, experiences, skills and contact details.
 
-HTML and CSS are the coding languages used to write and create this page
+HTML and CSS are the coding languages used to write and create this page.
