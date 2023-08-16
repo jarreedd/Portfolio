@@ -1,169 +1,262 @@
 <!DOCTYPE html>
 
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Jarreed Williams</title>
-        <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
-    </head>
 
-    <body class="body">
-        <nav class="nav">
-            <h2><a class="logo" href="#"><span>R</span>eed.</a></h2>
-            <div class="nav-items">
-                <a class="menu-item"  href="/about.html">About</a>
-                <a class="menu-item" href="#education">Education</a>
-                <a class="menu-item" href="#experience">Experience</a>
-                <a class="menu-item" href="#skills">Skills</a>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jarreed Williams</title>
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body class="body">
+    <header class="header">
+        <h2><a class="brandname" href="/">.Reed</a></h2>
+        <nav class="nav-bar">
+            <a href="#contact-me" class="contact-me">Contact</a>
+
+            <div class="menu-btn">
+                <i class='bx bx-menu'></i>
             </div>
+            <ul class="menu-items">
+                <li class="menu-item"><a href="#projects">Projects</a></li>
+                <li class="menu-item"><a href="#skills">Skills</a></li>
+                <li class="menu-item"><a href="#education">Education</a></li>
+                <li class="menu-item"><a href="#experience">Experience</a></li>
+
+            </ul>
         </nav>
-    
-        <header class="header">
-            <div class="dark-layer">
-                <picture class="profile-picture">
-                    <source srcset="images/face.jpg" media="(max-width: 499px)">
-                    <source srcset="images/head-and-shoulders.jpg" media="(max-width: 1023px)">
-                    <img class="image" src="images/head-and-shoulders-original.jpg" alt="profile-picture">
-                </picture>
-        
-                <div class="container">
-                    <h3 class="greeting">Hello, I am</h3>
-                    <h1 class="name">Jarreed Williams</h1>
-                    <h2 class="position">Software Development Student<br>& Robotics Hobbyist</h2>
-                    <p class="introductory-statement">Software developer in training.</p>
-                </div>
-    
-                <div class="btns">
-                    <a href="https://github.com/jarreedd" class="github"><ion-icon size="large" name="logo-github"></ion-icon></a>
-                    <a href="#contact-me" class="contact-me">Contact</a>
-                </div>
+    </header>
+
+    <section class="hero">
+        <div class="dark-layer">
+            <picture class="profile-picture">
+                <source srcset="images/face.jpg" media="(max-width: 499px)">
+                <source srcset="images/head-and-shoulders.jpg" media="(max-width: 1023px)">
+                <img class="image" src="images/head-and-shoulders-original.jpg" alt="profile-picture">
+            </picture>
+
+            <div class="introduction">
+                <h4 class="greeting">Hello, I am</h4>
+                <h1 class="name">Jarreed Williams</h1>
+                <h2 class="position">Frontend Developer</h2>
+                <p class="introductory-statement">Recent graduate developer eager to dive into the tech and software
+                    development industry, seeking hands-on experience and growth opportunities</p>
             </div>
-        </header>
-    
-        <main class="main">
-            <section class="education" id="education">
-                <h2>Education & Learning</h2>
-    
-                <!-- <article class="qualification">
-                    <h3>Qualification</h3>
-                    <h4>Location <br> start date(yyyy) – end date(yyyy)</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, natus.</p>
-                </article> -->
-    
-                <article class="qualification">
-                    <h3>National Senior Certificate</h3>
-                    <h4>Klein Nederburg Secondary<br>2016 – 2020</h4>
-                    <p>In my senior year of high school I had the subjects: Afrikaans Home Language, English, Mathematics, Life Orientation, Physical Science, Biology and Geography. I pass Grade 12 with a 65% average.</p>
-                </article>
-    
-                <article class="qualification">
-                    <h3>Introduction to Programming: Graphics, Games and Embedded Systems</h3>
-                    <h4>WECODE24 <br>2018</h4>
-                    <p>A after-school class where we were taught Programming through coding games and also writing code to operate electronics</p>
-                </article>
-            </section>
-    
-            <section class="experiences" id="experience">
-                <h2>Experience</h2>
-    
-                <!-- <article class="experience">
-                    <h3>Role</h3>
-                    <h4>Company, start date(yyyy) – end date(yyyy)</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, natus.</p>
-                </article> -->
-    
-                <article class="experience">
-                    <h3>General Worker</h3>
-                    <h4>Williams Houtwerke <br> 2021 – 2022</h4>
-                </article>
-    
-                <article class="experience">
-                    <h3>Deputy Headboy</h3>
-                    <h4>Klein Nederburg Secondary <br>2020</h4>
-                </article>
-    
-                <article class="experience">
-                    <h3>Council Member</h3>
-                    <h4>Paarl Junior Town Council <br>2018 – 2019</h4>
-                </article>
-            </section>
-    
-            <aside class="skills" id="skills">
-                <h2>My Skills</h2>
-                <p>Skills, tools and technologies i use in my projects.</p>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>SCSS</li>
-                    <li>JavaScript</li>
-                    <li>Python</li>
-                    <li>VS Code</li>
-                    <li>Blander</li>
-                    <li>OnShope</li>
-                    <li>Figma</li>
-                    <li>Scratch</li>
-                    <li>carpentry</li>
-                    <li>power tools</li>
-                </ul>
-    
-                <div class="interests">
-                    <h4>Interests</h4>
-                    <p>These are the things that a I am interested in.</p>
-                    <ul>
-                        <li>Astronomy</li>
-                        <li>Engineering</li>
-                        <li>Gaming</li>
-                        <li>Construction</li>
-                        <li>Programming</li>
-                        <li>Robotics</li>
-                    </ul>
+
+            <div class="cv-link">
+                <a href="#">Resume</a>
+            </div>
+        </div>
+    </section>
+
+    <main class="main">
+        <section class="projects" id="projects">
+            <div class="heading">
+                <h2>Projects</h2>
+                <a href="https://github.com/jarreedd" target="_blank" class="github">
+                    <h4>Github</h4>
+                </a>
+            </div>
+
+            <article class="project-grid">
+
+                <div class="project 2-image">
+                    <img src="./images/audiosorcerer-preview.png">
                 </div>
+
+                <div class="project 2-info">
+                    <h3>Auido Sorcerer</h3>
+
+                    <div class="badges">
+                        <p class="bt1">Academic Capstone</p>
+                        <p class="bt2">React App</p>
+                    </div>
+
+                    <p class="prject-description">
+                        a podcast app that allows users to browse various podcast shows, play episodes, and track their
+                        favorite episodes
+                    </p>
+                </div>
+
+                <div class="project 1-info">
+                    <h3>Book Connect</h3>
+
+                    <div class="badges">
+                        <p class="bt1">Academic Capstone</p>
+                    </div>
+
+                    <p class="prject-description">
+                        a dynamic website showcasing book previews. Easily filter books by genre, author, and keywords
+                        to suit your reading preferences.
+                    </p>
+                </div>
+
+                <div class="project 1-image">
+                    <img src="./images/bookconnect-preview.png">
+                </div>
+            </article>
+        </section>
+
+        <section class="skills" id="skills">
+            <h3>Languages, Tools and Technologies</h3>
+            <ul>
+                <li>HTML</li>
+                <li>CSS </li>
+                <li>SCSS</li>
+                <li>JavaScript</li>
+                <li>TypeScript</li>
+                <li>React</li>
+                <!-- <li>Python</li> -->
+                <!-- <li>Java</li> -->
+                <li>VS Code</li>
+                <li>Figma</li>
+                <!-- <li>Blander</li> -->
+                <!-- <li>OnShope</li> -->
+            </ul>
+
+            <aside class="interests">
+                <h4>Interests</h4>
+                <p>These are the things that I am interested in.</p>
+                <ul>
+                    <li>Software Dev.</li>
+                    <li>Programming</li>
+                    <li>UX/UI Design</li>
+                    <li>Robotics</li>
+                    <li>Astronomy</li>
+                    <li>Engineering</li>
+                    <li>Gaming</li>
+                    <li>Construction</li>
+
+                </ul>
             </aside>
-        </main>
-    
-        <footer class="footer">
+            <hr>
+        </section>
+
+        <section class="education" id="education">
+            <h2>Education & Learning</h2>
+
+            <article class="qualification">
+                <h3>Software Development</h3>
+                <h4><a href="https://www.codespace.co.za/">Codespace Academy</a> | 2023</h4>
+                <p>This course gave me a solid foundation in programming, computer science principles and
+                    problem-solving. The
+                    program focused on frontend languages and introduced me to the relevant technologies needed to
+                    deploy
+                    and manage software in a production environment.</p>
+            </article>
+
+            <article class="qualification">
+                <h3>National Senior Certificate</h3>
+                <h4><a href="http://www.knhigh.co.za/">Klein Nederburg Secondary</a> | 2016 – 2020</h4>
+                <p>These are the subjects I passed with in my senior year of high school: Afrikaans Home Language,
+                    English, Mathematics,
+                    Life Orientation, Physical Science, Biology and Geography. I passed Grade 12 with a 65% average.</p>
+            </article>
+
+            <article class="qualification">
+                <h3>Introduction to Programming: Graphics, Games and Embedded Systems</h3>
+                <h4><a href="https://wecode24.com/">WECODE24</a> | 2018</h4>
+                <p>An after-school class where we were taught Programming through coding games and also writing code to
+                    operate electronics.</p>
+            </article>
+            <hr>
+        </section>
+
+        <section class="experiences" id="experience">
+            <h2>Experience</h2>
+
+            <!-- <article class="experience">
+                <h3>Role</h3>
+                <h4>Company, start date(yyyy) – end date(yyyy)</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, natus.</p>
+            </article> -->
+
+            <article class="experience">
+                <h3>Carpenter Helper</h3>
+                <h4>Williams Carpentry | 2021 – 2022</h4>
+                <ul style="margin: 0 0 0 20px;">
+                    <li>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </li>
+                    <li>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </li>
+                    <li>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </li>
+                    <li>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </li>
+                </ul>
+            </article>
+
+            <article class="experience">
+                <h3>Council Member</h3>
+                <h4>Paarl Junior Town Council | 2018 – 2019</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio rem cupiditate inventore natus,
+                    dolorum ipsam quod quidem nemo enim voluptatum possimus a alias dolorem sit nihil laborum! Facilis,
+                    enim ut.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam expedita beatae odio in! Vel,
+                    suscipit!</p>
+            </article>
+        </section>
+
+        <section class="contect">
             <div class="light-layer">
-                <section class="form" id="contact-me">
+                <article class="form" id="contact-me">
                     <form action="https://formsubmit.co/jarreedw@gmail.com" method="POST">
-                        <h2>Say hello</h2>
+                        <h2 class="form-heading">Say hello</h2>
                         <h3>Get in touch<span>_</span></h3>
-        
-                        <div class="inputbox">
-                            <label for="name">Name: </label>
+
+                        <div class="inputs">
+                            <label class="sender-name" for="name">
+                                <h4>name:</h4>
+                            </label>
                             <input id="name" name="name" type="text" placeholder="John Doe *" required>
-                        </div>
-        
-                        <div class="inputbox">
-                            <label for="email">Email: </label>
+
+                            <label class="sender-email" for="email">
+                                <h4>email:</h4>
+                            </label>
                             <input id="email" name="email" type="email" placeholder="johndoe@e.com *" required>
-                        </div>
-        
-                        <div class="inputbox">
-                            <label for="subject">Subject: </label>
-                            <select id="subject" name="_subject" required>
+
+                            <label class="subject" for="subject">
+                                <h4>subject:</h4>
+                            </label>
+                            <select id="subject" name="subject" required>
                                 <option value="">--purpose of contacting--</option>
                                 <option value="Interview Opportunity">Interview Opportunity</option>
                                 <option value="Recruitment">Recruitment</option>
                                 <option value="Internship">Internship</option>
+                                <option value="Collaboration">Collaboration</option>
                                 <option value="Greeting">Just want to say hi!</option>
                                 <option value="other">other</option>
                             </select>
-                        </div>
-        
-                        <textarea name="message" placeholder="Write message (optional)" rows="2"></textarea>
-        
-                        <input id="submitBtn" type="submit" value="send email">
-    
-                    </form>
-                </section>
 
-                <section class="contact-information">
+                            <textarea class="message" name="message" placeholder="Write message *" rows="2"
+                                required></textarea>
+
+                            <div class="submitBtn">
+                                <input id="submitBtn" type="submit" value="send email">
+                            </div>
+                        </div>
+
+                    </form>
+                </article>
+
+                <article class="current-avaliablity">
+                    <h3>Availability<span>_</span></h3>
+                    <p>At this current time I am available for any frontend web development projects.</p>
+                </article>
+
+                <article class="contact-information">
                     <h3>Contact information<span>_</span></h3>
                     <p>Feel free to contact me</p>
-                    <div class="location">
-                        <p>L: </p>
+                    <div class="my-location">
+                        <i class='bx bx-current-location'></i>
                         <address>
                             Paarl
                             7646
@@ -171,28 +264,42 @@
                             South Africa
                         </address>
                     </div>
-                    <p>E: jarreedw@gmail.com</p>
-                    <p>P: +276436542221</p>
-                </section>
-        
-                <section class="current-avaliablity">
-                    <h3>Availability<span>_</span></h3>
-                    <p>At this current time I am full-time studying Software Development at Codespace. At this time am I not available for any other...</p>
-                </section>
-                
-                <section class="follow-me">
-                    <h3>Follow me on<span>_</span></h3>
-                    <div class="social">
-                    <a href="https://www.linkedin.com/in/jarreed-williams-284a0721a/" target="_blank"><ion-icon name="logo-linkedin" size="large"></ion-icon><p>LinkedIn</p></a>
-                    <a href="https://github.com/jarreedd" target="_blank"><ion-icon name="logo-github" size="large"></ion-icon><p>Github</p></a>
-                    <a href="https://www.facebook.com/jarreed.williams/" target="_blank"><ion-icon name="logo-facebook" size="large"></ion-icon><p>Facebook</p></a>
-                    <a href="https://www.instagram.com/jarreed_williams" target="_blank"><ion-icon name="logo-instagram" size="large"></ion-icon><p>Instagram</p></a>
+                    <div class="my-email">
+                        <i class='bx bx-envelope'></i>
+                        <p> jarreedw@gmail.com</p>
                     </div>
-                </section>
+                </article>
+
+                <article class="follow-me">
+                    <h3>Social Media<span>_</span></h3>
+                    <div class="social">
+                        <a href="https://www.linkedin.com/in/jarreed-williams-284a0721a/" target="_blank">
+                            <i class='bx bxl-linkedin-square'></i>
+                            <p>LinkedIn</p>
+                        </a>
+                        <a href="https://github.com/jarreedd" target="_blank">
+                            <i class='bx bxl-github'></i>
+                            <p>Github</p>
+                        </a>
+                        <a href="https://www.facebook.com/jarreed.williams/" target="_blank">
+                            <i class='bx bxl-facebook-square'></i>
+                            <p>Facebook</p>
+                        </a>
+                        <a href="https://www.instagram.com/jarreed_williams" target="_blank">
+                            <i class='bx bxl-instagram-alt'></i>
+                            <p>Instagram</p>
+                        </a>
+                    </div>
+                </article>
+
             </div>
-        </footer>
-       
-        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    </body>
+        </section>
+    </main>
+
+
+    <footer>
+        <p><span>.Reed development</span> © 2023</p>
+    </footer>
+</body>
+
 </html>
