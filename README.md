@@ -1,5 +1,3 @@
-# JARWIL102_FTC2301_ftcNwabisaGroup_JarreedWilliams_ITW9
-
 # Digital Resumé/Portfolio
 
 A digital portfolio that contains information about myself. This website has a list of my qualifications, experiences, skills and contact details.
