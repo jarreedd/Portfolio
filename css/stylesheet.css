@@ -251,6 +251,14 @@ a:hover {
     color: var(--accent);
 }
 
+.experiences {
+    margin-bottom: 20px;
+}
+
+.experience {
+    margin-bottom: 10px;
+}
+
 .contect {
     background-color: var(--secondary);
     display: flex;
