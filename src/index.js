@@ -1,0 +1,1 @@
+alert("Welcome to my website! Please note that this website is still in the development phase, so you might encounter some features that are a work in progress. Thank you for your understanding and patience!")
