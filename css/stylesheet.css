@@ -63,8 +63,24 @@ a:hover {
     color: var(--accent);
 }
 
-.menu-items {
-    display: none;
+.menu-items{
+    visibility:hidden;
+    position: absolute;
+    left: 0px;
+    top: 50px;
+    list-style: none;
+    background-color: var(--primary);
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.menu-items.show {
+    visibility: visible;
+    
+}
+
+.menu-item {
+    margin: 0 0 5px 10px;
 }
 
 .hero {
@@ -197,6 +213,7 @@ a:hover {
     font-weight: 500;
     display: flex;
     gap: 5px;
+    flex-wrap: wrap;
 }
 
 .project .badges p {
@@ -205,13 +222,17 @@ a:hover {
 }
 
 .project .badges .bt1 {
-    background-color: rgb(70, 70, 70);
+    background-color: #464646;
     color: #ffffff;
 }
 
 .project .badges .bt2 {
-    background-color: black;
+    background-color: #000000;
     color: cyan;
+}
+.project .badges .bt3 {
+    background-color: green;
+    color: #ffffff;
 }
 
 .prject-description {
