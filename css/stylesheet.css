@@ -164,9 +164,7 @@ a:hover {
 }
 
 .main section {
-    padding: 0 20px;
-    /* border: 2px solid var(--primary);
-    border-bottom: none; */
+    padding: 50px 20px 0 20px;
 }
 
 .main h2 {
@@ -259,7 +257,6 @@ a:hover {
 
 
 .qualification {
-    /* background-color: #dadada; */
     margin-bottom: 10px;
 }
 
