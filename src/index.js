@@ -4,6 +4,7 @@ let meunOpen = false
 
 const menuBtn = document.querySelector('.menu-btn')
 const menuItems = document.querySelector('.menu-items')
+const resumeRequest = document.querySelector('.resume-request')
 
 function toggleMenu() {
     meunOpen = !meunOpen
