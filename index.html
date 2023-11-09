@@ -233,7 +233,7 @@
                             <label class="subject" for="subject">
                                 <h4>subject:</h4>
                             </label>
-                            <select id="subject" name="subject" required>
+                            <select id="subject" name="_subject" required>
                                 <option value="">--purpose of contacting--</option>
                                 <option value="Interview Opportunity">Work Opportunity</option>
                                 <option value="Recruitment">Recruitment</option>
@@ -303,10 +303,30 @@
         </section>
     </main>
 
-
     <footer>
         <p><span>.Reed development</span> © 2023</p>
     </footer>
+
+    <div class="overlay show">
+        <dialog open>
+            <div><i class='bx bx-x'></i></div>
+
+            <form class="resume-request-form" action="https://formsubmit.co/dbdd65c604dfff312a73355a55512a08"
+                method="POST">
+                <h4>Please fill in your details</h4>
+
+                <input type="hidden" name="_subject" value="Resume request">
+
+                <label for="name">Fullname: <input type="text" name="name" id="name" required></label>
+                <label for="email">Email: <input type="email" name="email" id="email" required></label>
+                <label for="rol"> Role/Occupation: <input type="text" name="" id="" required> </label>
+                <label for="organization"> Organization name: <input type="text" name="organization-name"
+                        id="organization" required></label>
+
+                <input type="submit" value="Send request">
+            </form>
+        </dialog>
+    </div>
 </body>
 
 </html>
