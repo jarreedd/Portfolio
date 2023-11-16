@@ -295,31 +295,29 @@ a:hover {
 }
 
 .experiences {
-    margin-bottom: 20px;
+    border-bottom: 40px solid transparent;
 }
 
 .experience {
     margin-bottom: 10px;
 }
 
-.contect {
+.contact {
     background-color: var(--secondary);
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px 10px 20px 10px;
 }
 
-.contect article {
-    margin: 10px;
-    width: calc(100vw -20px);
-}
-
-.contect h3, .contect h4 {
+.contact h3, .contact h4 {
     margin: 5px 0;
     color: var(--primary);
 }
-.contect span {
+.contact span {
     color: var(--accent);
+    font-weight: 800;
 }
 
 .form h2 {
@@ -384,6 +382,11 @@ form .submitBtn {
     border: 2px solid var(--accent);
 }
 
+.current-avaliablity, .contact-information, .follow-me{
+    width: 300px;
+    margin-bottom: 20px;
+}
+
 .my-location , .my-email {
     display: flex;
     gap: 5px;
@@ -394,18 +397,15 @@ form .submitBtn {
     color: var(--primary);
 }
 
-.follow-me h3, .follow-me p {
-    display: none;
-}
-
-.social {
-    text-align: center;
-}
 
 .social a {
     text-decoration: none;
     color: var(--primary);
     margin: 0 5px;
+}
+
+.social i:hover {
+    color: var(--accent);
 }
 
 footer {
@@ -430,7 +430,7 @@ footer p span {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-    z-index: 1;
+    z-index: 3;
 }
 
 .overlay.show dialog {
@@ -459,14 +459,18 @@ footer p span {
 /* Responsiveness */
 
 /* Tablet */
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 600px) {
     .name {
         font-size: 3rem;
+    }
+
+    .contact {
+        gap: 40px;
     }
 }
 
 /* Laptop and Desktop */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1000px) {
     .menu-btn {
         display: none;
     }
