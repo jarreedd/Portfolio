@@ -427,8 +427,11 @@ footer p span {
     flex-direction: column;
 }
 
-dialog div i {
-    float: right;
+.overlay.show dialog  button {
+    display: flex;
+    justify-content: center;
+    width: min-content;
+    align-self: flex-end;
 }
 
 .resume-request-form {
