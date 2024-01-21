@@ -6,4 +6,4 @@ HTML and CSS are the coding languages used to create this page, with Javascript 
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/3375ab65-bd29-4e1b-9fcb-38a41a0de668/deploy-status)](https://app.netlify.com/sites/jarreedwilliams/deploys)
 
-visit website: [https://jarreedwilliams.netlify.app/](jarreedwilliams.netlify.app)
+visit website: [jarreedwilliams.netlify.app](https://jarreedwilliams.netlify.app/)
