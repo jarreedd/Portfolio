@@ -1,0 +1,31 @@
+.accent {
+    color: var(--clr-light);
+}
+
+.heading {
+    color: var(--clr-secondary);
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: -0.05em;
+    background-color: var(--clr-primary);
+    color: var(--clr-light);
+    padding: 0.4em 1em;
+    height: 36px;
+    border-radius: 4px;
+    transition: box-shadow 1s, background-color 1s, color 1s;
+}
+
+.btn.secondary {
+    background-color: var(--clr-dark);
+    border: 3px solid var(--clr-light);
+}
+
+.btn:hover {
+    box-shadow: var(--clr-light) 0px 0px 200px 50px;
+    background-color: var(--clr-light);
+    color: var(--clr-dark);
+}
