@@ -45,4 +45,32 @@ button {
 
 a {
     color: var(--clr-light);
+    text-decoration: none;
+}
+
+/* Header */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.nav__items {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.nav__item {
+    font-weight: 600;
+}
+
+.nav__items:hover > .nav__item a {
+    transition: .4s;
+    color: var(--primary);
+}
+
+.nav__item:hover > a:hover {
+    color: var(--clr-light);
 }
