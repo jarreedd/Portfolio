@@ -1,0 +1,545 @@
+:root {
+    --text: #000000;
+    --background: #ffffff;
+    --primary: #4e4e4e;
+    --secondary: #dadada;
+    --accent: #e97705;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 10px;
+    height: 50px;
+
+    position: sticky;
+    top: 0;
+
+    background-color: var(--primary);
+    z-index: 2;
+}
+
+.brandname {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.brandname:hover {
+    color: var(--secondary);
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: var(--secondary);
+    font-weight: 500;
+    margin: 0 10px;
+    padding: 0;
+}
+
+a:hover {
+    color: var(--accent);
+}
+
+.menu-btn {
+    height: 26px;
+    width: 26px;
+}
+
+.bx {
+    font-size: 26px;
+    color: var(--accent);
+}
+
+.bx:hover {
+    color: var(--secondary);
+}
+
+.menu-items{
+    visibility:hidden;
+    position: absolute;
+    left: 0px;
+    top: 50px;
+    list-style: none;
+    background-color: var(--primary);
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.menu-items.show {
+    visibility: visible;
+    
+}
+
+.menu-item {
+    margin: 0 0 5px 10px;
+}
+
+.hero {
+    background-image: url(/images/banner-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.dark-layer {
+    background: rgba(78,78,78, 0.3);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.profile-picture .image {
+    border-radius: 50%;
+    border: 4px solid var(--primary);
+    height: 200px;
+    margin: 0 0 0 20px;
+}
+
+.introduction {
+    margin: 20px;
+}
+
+.greeting {
+    color: var(--secondary);
+}
+
+.name {
+    background-color: var(--accent);
+    color: var(--primary);
+    font-size: 2.5rem;
+    margin: 5px 0;
+    padding: 0 5px;
+    border-radius: 5px;
+}
+
+.position {
+    font-size: 1.3rem;
+    margin: 10px;
+    color: var(--background);
+}
+
+.introductory-statement {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--secondary);
+}
+
+.hero .dark-layer .buttons {
+    position: absolute;
+    left: 30px;
+    bottom: 20px;
+}
+
+.btn {
+    border-radius: 8px;
+    background-color: var(--primary);
+    color: var(--secondary);
+    font-size: 1rem;
+    outline: none;
+    border: 2px solid var(--primary);
+    cursor: pointer;
+    font-weight: 600;
+    padding: 5px 10px;
+    transition: .2s;
+}
+
+.btn:hover {
+    border: 2px solid var(--accent);
+    color: var(--accent);
+    background: none;
+}
+
+.hero .buttons .resume-request.btn {
+    border: 2px solid var(--secondary);
+    color: var(--secondary);
+    background: none;
+} 
+
+.hero .buttons .resume-request.btn:hover {
+    border: 2px solid var(--accent);
+    color: var(--accent);
+}
+
+.main {
+    position: relative;
+    top: calc(100vh - 50px);
+    margin-bottom: calc(100vh - 50px);
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main section {
+    padding: 50px 20px 0 20px;
+}
+
+.main h2 {
+    padding: 10px 0;
+}
+
+
+.projects a {
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.projects a {
+    color: var(--primary);
+}
+
+.projects a:hover {
+    color: var(--accent);
+}
+
+.projects .heading {
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-grid {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.project-grid div img {
+    width: 100%;
+    max-width: 500px;
+}
+
+.project .badges {
+    font-size: 10px;
+    font-weight: 500;
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.project .badges p {
+    padding: 0 4px 2px 4px;
+    border-radius: 6px;
+}
+
+.project .badges .bt1 {
+    background-color: #464646;
+    color: #ffffff;
+}
+
+.project .badges .bt2 {
+    background-color: #000000;
+    color: cyan;
+}
+.project .badges .bt3 {
+    background-color: green;
+    color: #ffffff;
+}
+
+.prject-description {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.skills h3 {
+    text-align: center;
+    margin: 10px;
+}
+
+.skills ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 10px;
+}
+
+.skills li {
+    list-style: none;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+
+.qualification {
+    margin-bottom: 10px;
+}
+
+.qualification a {
+    color: var(--primary);
+    margin: 0;
+}
+
+.qualification a:hover {
+    color: var(--accent);
+}
+
+.experiences {
+    border-bottom: 40px solid transparent;
+}
+
+.experience {
+    margin-bottom: 10px;
+}
+
+.contact {
+    background-color: var(--secondary);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px 10px 20px 10px;
+}
+
+.contact h3, .contact h4 {
+    margin: 5px 0;
+    color: var(--primary);
+}
+.contact span {
+    color: var(--accent);
+    font-weight: 800;
+}
+
+.form h2 {
+    color: var(--accent);
+    text-align: center;
+}
+
+.inputs {
+    display: grid;
+    gap: 8px;
+    grid-template-areas: 
+        'name nam nam nam'
+        'email em em em'
+        'subject subj subj subj'
+        'msg msg msg msg' 
+        'msg msg msg msg'
+        'btn btn btn btn';
+    grid-template-columns: repeat(4, 1fr); 
+    grid-template-rows: repeat(6, 1fr); 
+}
+
+form .sender-name {grid-area: name;}
+form #name {
+    grid-area: nam;
+    width: 230px;
+}
+
+form .sender-email {grid-area: email;}
+form #email {
+    grid-area: em;
+    width: 230px;
+}
+
+form .subject {grid-area: subject;}
+form #subject {
+    grid-area: subj;
+    width: fit-content;
+}
+
+form .message {grid-area: msg; padding: 5px;}
+
+.inputs input, .inputs select, .inputs textarea {
+    outline: none;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+form .submitBtn {
+    grid-area: btn;
+    display: flex;
+    justify-content: center;
+}
+
+#submitBtn {
+    border: 2px solid var(--primary);
+}
+
+#submitBtn:hover {
+    background: var(--secondary);
+    color: var(--accent);
+    border: 2px solid var(--accent);
+}
+
+.current-avaliablity, .contact-information, .follow-me{
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.my-location , .my-email {
+    display: flex;
+    gap: 5px;
+    margin-top: 5px;
+}
+
+.contact-information .bx, .follow-me .bx{
+    color: var(--primary);
+}
+
+
+.social a {
+    text-decoration: none;
+    color: var(--primary);
+    margin: 0 5px;
+}
+
+.social i:hover {
+    color: var(--accent);
+}
+
+footer {
+    background-color: var(--primary);
+    height: 30px;
+    text-align: center;
+}
+
+footer p {
+    font-size: 14px;
+    padding: 5px;
+}
+
+footer p span {
+    color: var(--secondary);
+}
+
+.overlay.show {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 3;
+}
+
+.overlay.show dialog {
+    margin: 30vh auto;
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.overlay.show dialog  button {
+    display: flex;
+    justify-content: center;
+    width: min-content;
+    align-self: flex-end;
+}
+
+.resume-request-form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+
+/* Responsiveness */
+
+/* Tablet */
+@media screen and (min-width: 600px) {
+    .name {
+        font-size: 3rem;
+    }
+
+    .contact {
+        gap: 40px;
+    }
+}
+
+/* Laptop and Desktop */
+@media screen and (min-width: 1000px) {
+    .menu-btn {
+        display: none;
+    }
+
+    .menu-items {
+        visibility: visible;
+        position: relative;
+        top: 3px;
+        background-color: var(--primary);
+        padding: 0px;
+        display: flex;
+    }
+
+    .dark-layer {
+        flex-direction: row;
+    }
+
+    .profile-picture .image {
+        height: 300px;
+    }
+
+    .greeting {
+        font-size: 26px;
+    }
+
+    .name {
+        font-size: 4rem;
+    }
+
+    .position {
+        font-size: 2rem;
+    }
+
+    .introductory-statement {
+        font-size: 18px;
+        color: var(--secondary);
+    }
+
+    .project-grid {
+        gap: 20px;
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .prject-description {
+        font-size: 18px;
+    }
+
+    .skills h3 {
+        font-size: 1.5rem;
+        margin: 20px 0 10px 0;
+    }
+    
+    .skills ul {
+        grid-template-columns: repeat(4, 1fr);
+        margin-bottom: 20px;
+    }
+    
+    .skills li {
+        list-style: none;
+        font-weight: 600;
+        font-size: 18px;
+    }
+    
+    .interests h4, .interests p{
+        font-size: larger;
+    }
+
+    p {
+        font-size: 18px;
+    }
+    
+}
